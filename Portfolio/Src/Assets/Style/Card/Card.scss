@@ -1,0 +1,73 @@
+@import '../Variables/Variables.scss';
+@import '../Fonts/Fonts.scss';
+@import '../Mixins/Mixins.scss';
+
+.card {
+    background-color: $bg-color;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: $main-shadow;
+    width: 340px; 
+    margin-left: auto;
+    &__text, & li {
+        font-size: $font-12;
+}
+    .rotating-curved-text {
+        font-family: $headline-font;
+        animation: spin 8s linear infinite;
+        @include spin-animation(spin);
+    }
+    &__xp {
+        font-family: $headline-font;
+        color: $secondary-color;
+        font-size: $font-48;
+        position: absolute;
+        top: 16%;
+    }
+    &__text {
+        font-family: $text-font;
+        text-align: center;
+        width: 100px; 
+        position: absolute;
+        top: 32%;
+
+    }
+    & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    & li {
+        width: 40%; 
+        font-family: $headline-font;
+        margin: 5px;
+    }
+}
+
+
+
+@media (max-width:1024px) {
+    .card {
+        margin: 16px auto;
+        &__text {
+            top: 36%;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:425px) {
+    .card {
+        width: 90%;
+        &__xp {
+            top: 16%;
+        }
+        &__text {
+            top: 36%;
+            font-size: $font-12;
+        }
+    }
+}
+

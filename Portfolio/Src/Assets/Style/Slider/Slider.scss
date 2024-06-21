@@ -1,0 +1,70 @@
+.auto-slider-container {
+    margin: 0 32px;
+    .scroller {
+        &__inner {
+            padding-block: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        &[data-animated="true"] {
+            overflow: hidden;
+            -webkit-mask: linear-gradient(
+                90deg,
+                transparent,
+                white 20%,
+                white 80%,
+                transparent
+            );
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+            
+            & .scroller__inner {
+                width: max-content;
+                flex-wrap: nowrap;
+                animation: scroll var(--_animation-duration, 40s)
+                    var(--_animation-direction, forwards) linear infinite;
+                @include auto-scroll-animation(scroll);
+            }
+        }
+
+        &[data-speed="slow"] {
+            --_animation-duration: 12s;
+        }
+    }
+
+    .tag-list {
+        margin: 0;
+        padding-inline: 0;
+        list-style: none;
+
+        li {
+            border: 1px solid $secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 56px;
+            width: 56px;
+            padding:12px;
+            background: var(--clr-primary-400);
+            box-shadow: $icon-shadow;
+            & p {
+                font-family: $headline-font;
+                font-size: $font-12;
+            }
+        }
+    }
+}
+
+ @media (min-width:320px) and (max-width:425px) {
+    .Auto-slider-container .tag-list li {
+        padding: 5px 8px;
+    }
+ }
+
+ @media (min-width:320px) and (max-width:1025px) {
+    .card ul {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,48 @@
+[
+    {
+      "url": "../../images/Logos/html.webp",
+      "alt": "HTML Logo",
+      "name": "HTML"
+    },
+    {
+      "url": "../../images/Logos/css-3.webp",
+      "alt": "CSS Logo",
+      "name": "CSS"
+    },
+    {
+      "url": "../../images/Logos/Sass.png",
+      "alt": "Sass Logo",
+      "name": "Sass"
+    },
+    {
+      "url": "../../images/Logos/js.webp",
+      "alt": "JavaScript Logo",
+      "name": "JavaScript"
+    },
+    {
+      "url": "../../images/Logos/React.png",
+      "alt": "React Logo",
+      "name": "React"
+    },
+    {
+      "url": "../../images/Logos/Redux.png",
+      "alt": "Redux Logo",
+      "name": "Redux"
+    },
+    {
+      "url": "../../images/Logos/figma.webp",
+      "alt": "Figma Logo",
+      "name": "Figma"
+    },
+    {
+      "url": "../../images/Logos/Trello.png",
+      "alt": "Trello Logo",
+      "name": "Trello"
+    },
+    {
+      "url": "../../images/Logos/MongoDB.png",
+      "alt": "MongoDB Logo",
+      "name": "MongoDB"
+    }
+    
+]

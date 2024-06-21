@@ -1,0 +1,30 @@
+[
+    {
+        "sliderImg": "/Assets/Img/Works/Bluel-Wall.png",
+        "sliderTitle": "Portfolio - Sophie Bluel",
+        "sliderDescription": "Designing a Single Page Desktop-First Application for an Architect, Implementing a RESTful API for Data Retrieval, Encompassing Category Filtering, and a Contact Form.",
+        "sliderLink": "https://github.com/QJanvier/Projet-n-6-Portfolio.git",
+        "sliderId": 1
+    },
+    {
+        "sliderImg": "/Assets/Img/Works/Nina-Wall.png",
+        "sliderTitle": "Portfolio - Nina Carducci",
+        "sliderDescription": "Optimizing a Desktop-First Application by Implementing SEO, Accessibility, and Performance Enhancements.",
+        "sliderLink": "https://github.com/QJanvier/Projet9Refe.git",
+        "sliderId": 2
+    },
+    {
+        "sliderImg": "/Assets/Img/Works/724-Wall.png",
+        "sliderTitle": "Event Agency - 724events",
+        "sliderDescription": "Debugging the React website of an event agency",
+        "sliderLink": "https://github.com/QJanvier/Projet10DebugSiteEvent.git",
+        "sliderId": 3
+    },
+    {
+        "sliderImg": "/Assets/Img/Works/ArgentBank-Wall.jpeg",
+        "sliderTitle": "Online Bank - ArgentBank",
+        "sliderDescription": "Transforming a static website into a React application with state management using Redux",
+        "sliderLink": "https://github.com/QJanvier/Project11ArgentBank.git",
+        "sliderId": 4
+    }
+]

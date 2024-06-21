@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.Hero-Pages {
+    display: flex;
+}
+
+body, html, main, #root {
+    font-family: $text-font;
+    min-height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    margin:0 234px 48px 234px;
+}
+
+.article-hero {
+    display: flex;
+}
+
+.article-side {
+    margin-top: 48px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: $secondary-color;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $sun-color;
+}
+
+.border-radius {
+    border-radius: 4px;
+}
+
+.top-left-radius {
+    border-top-left-radius: 4px;
+}
+.top-right-radius {
+    border-top-right-radius: 4px;
+}
+.bottom-left-radius {
+    border-bottom-left-radius: 4px;
+}
+.bottom-right-radius {
+    border-bottom-right-radius: 4px;
+}
+
+.margin-4 {
+    margin: 4px 0;
+}
+
+.margin-16 {
+    margin: 16px 0;
+}
+.padding-8 {
+    padding: 8px;
+}
+
+.pulse {
+    animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    @include pulse-animation(pulse)
+}
+
+h2 {
+    font-family: $headline-font;
+    color: $secondary-color;
+    font-size: $font-32;
+}
+
+@media (min-width:320px) and (max-width:425px) {
+    h2 {
+        font-size: $font-20;
+    }
+}
+
+@media (max-width:1024px) {
+    .article-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:1024px) and (max-width: 1439px) {
+        .article {
+            margin: 24px 8%;
+        }
+}
+@media (min-width: 427px) and (max-width: 1024px) {
+        .article {
+            margin: 20px 4%;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+        .article {
+            margin: 12px;
+        }
+}
