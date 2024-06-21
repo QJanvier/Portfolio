@@ -1,0 +1,39 @@
+.Hero-Pages {
+    justify-content: center;
+}
+
+.article-hero {
+    justify-content: center;
+}
+
+.hero {
+    box-sizing: border-box;
+    padding-right: 40px;
+    text-shadow: 1px 0px 5px rgba(126, 96, 38, 0.2);
+    width: 60%;
+    animation: track-in 3s forwards;
+    @include track-in-animation(track-in);
+    &__h2 {
+        display: flex;
+        justify-content: center;
+        font-family: $headline-font;
+        color: $secondary-color;
+    }
+    &__h3 {
+        font-family: $headline-font;
+        font-size: $font-20;
+    }
+    &__p {
+        width: 100%;
+        font-family: $text-font;
+        font-size: $font-16;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:1024px) {
+    .hero {
+        width: 100%;
+        padding-right: 0;
+    }
+}

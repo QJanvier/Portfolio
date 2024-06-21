@@ -1,4 +1,6 @@
 import Header from '../Components/Header/Header';
+import Hero from '../Components/Hero/Hero';
+import Grid from '../Components/Grid/Grid';
 
 function Home() {
     return (
@@ -6,6 +8,10 @@ function Home() {
         <header>
             <Header />
         </header>
+        <section className='Hero-Pages'>
+            <Hero />
+        </section>
+        <Grid />
         </>
     )
 }
