@@ -9,14 +9,14 @@
 
 body, html, main, #root {
     font-family: $text-font;
-    min-height: 100vh;
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
 }
 
 .article {
-    margin:0 234px 48px 234px;
+    margin-bottom: 48px;
+    margin-top: 30px;
 }
 
 .article-hero {
@@ -95,16 +95,19 @@ h2 {
 @media (min-width:1024px) and (max-width: 1439px) {
         .article {
             margin: 24px 8%;
+            margin-top: 55px;
         }
 }
 @media (min-width: 427px) and (max-width: 1024px) {
         .article {
             margin: 20px 4%;
+            margin-top: 45px;
         }
 }
 
 @media (min-width: 320px) and (max-width: 426px) {
         .article {
             margin: 12px;
+            margin-top: 25px;
         }
 }

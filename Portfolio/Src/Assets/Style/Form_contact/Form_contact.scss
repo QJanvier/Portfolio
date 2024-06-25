@@ -1,0 +1,84 @@
+.contact {
+    display: flex;
+    &__me p, .Input-container input::placeholder, #Message::placeholder, .container-form label, .Contact__form p, #form-btn {
+        font-size: $font-16;
+    }
+    &__me {
+        width: 50%;
+        & p {
+            font-family: $text-font;
+            width: 60%;
+            line-height: 20px;
+        }
+    }
+    &__form {
+        width: 50%;
+        .container-form {
+            margin: 12px 0;
+            .input-container {
+                display: flex;
+                flex-direction: column;
+                & input::placeholder, #Message::placeholder{
+                    font-family: $headline-font;
+                }
+                & input, textarea {
+                    border: 1px solid $secondary-color;
+                }
+                & input {
+                    font-family: $text-font;
+                    height: 20px;
+                }
+                textarea {
+                    height: 72px;
+                    margin-bottom: 8px;
+                }
+            }
+            & label {
+                font-family: $headline-font ;
+                margin: 4px 0;
+            }
+
+        }
+    }
+    .contact__form {
+        position: relative;
+    }
+    .message {
+        position: absolute;
+        font-family: $headline-font;
+        font-weight: bold;
+        &__green {
+            color: green;
+        }
+        &__red {
+            color: red;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:426px) {
+    .contact {
+        flex-direction: column;
+        &__me, &__me p, &__form {
+            width: 100%;
+        }
+        &__form {
+            margin-top: 32px;
+        }
+    }
+}
+
+.form-btn {
+    cursor: pointer;
+    font-family: $headline-font;
+    padding: 4px 0;
+    background-color: $sun-color;
+    color: $text-color;
+    border: 1px solid $secondary-color;
+    font-weight: bold;
+    box-shadow: $icon-shadow;
+}
+
+.btn-width {
+    width: 100%;
+}

@@ -1,17 +1,21 @@
 import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer/Footer';
 import Hero from '../Components/Hero/Hero';
-import Grid from '../Components/Grid/Grid';
+import Navbar from '../Components/Navbar/Navbar';
 
 function Home() {
     return (
         <>
-        <header>
-            <Header />
-        </header>
+        <Navbar />
         <section className='Hero-Pages'>
             <Hero />
         </section>
-        <Grid />
+        <header>
+            <Header />
+        </header>       
+        <footer>
+            <Footer />
+        </footer>
         </>
     )
 }

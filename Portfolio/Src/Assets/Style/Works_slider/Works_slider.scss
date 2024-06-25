@@ -1,0 +1,138 @@
+.works {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    & p {
+      max-width: 1012px;
+      display: flex;
+      justify-content: center;
+      font-family: $text-font;
+      line-height: 28px;
+      font-size: $font-16;
+      animation: track-in 3s ease;
+      @include track-in-animation(track-in);
+    }
+  
+    .center-align {
+      text-align: center;
+      padding: 8px;
+      animation: moveOutContent 0.5s  ease; 
+      @include move-out-animation(moveOutContent);
+    }
+  
+    .slider {
+      padding: 4px 4px 0 4px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: $main-shadow;
+  
+      & h3 {
+        display: flex;
+        gap: 10px;
+        font-family: $headline-font;
+        color: $secondary-color;
+        animation: moveInContent 0.4s  ease; 
+        @include move-in-animation(moveInContent);
+      }
+  
+      & img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 50% 0%;
+        border: 5px;
+        animation: moveUp 0.3s  ease;
+        @include move-up-animation(moveUp)
+      }
+  
+      .center-align.reverse {
+        text-align: center;
+        padding: 8px;
+        animation: moveInContent 0.5s ease; // Utilisation de l'animation inverse
+        @include move-in-animation(moveInContent); // Utilisation du mixin d'animation inverse
+      }
+      
+      & h3.reverse {
+        font-family: $headline-font;
+        color: $secondary-color;
+        animation: moveOutContent 0.4s ease; // Utilisation de l'animation inverse
+        @include move-out-animation(moveOutContent); // Utilisation du mixin d'animation inverse
+      }
+      
+      & img.reverse {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 30% 0%;
+        border: 5px;
+        animation: moveDown 0.3s ease; // Utilisation de l'animation inverse
+        @include move-down-animation(moveDown); // Utilisation du mixin d'animation inverse
+      }
+  
+      &__item {
+        &s {
+          overflow: hidden;
+          border: 5px;
+          height: 448px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 16px;
+        }
+      }
+    }
+  
+    .btn-display {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+      & button {
+        color: $sun-color;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: $font-48;
+        padding: 0 40px;
+        border: 0px solid transparent;
+        
+      }
+    }
+  
+    @media (min-width: 320px) and (max-width: 1439px) {
+      .center-align {
+        margin: 0;
+      }
+      .slider__item {
+        display: flex;
+        flex-direction: column-reverse;
+        &s {
+          height: 280px;
+        }
+      }
+      .slider__item a {
+        display: flex;
+        justify-content: center;
+      }
+      .slider__item p {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media (min-width:320px) and (max-width:426px) {
+    .slider img {
+      width: 100%;
+    }
+    .slider-image {
+      height: 40vh;
+    }
+  }
+  
+  @media (min-width:768px) and (max-width:1023px) {
+    .slider-image {
+      height: 400px;
+    }
+    .slider__items {
+      height: 600px;
+    }
+  }

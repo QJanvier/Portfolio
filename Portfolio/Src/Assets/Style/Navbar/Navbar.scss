@@ -1,0 +1,138 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: $secondary-color;
+    border-right: 4px solid $text-color;
+
+        &:hover .link-text {
+            color: $primary-color;
+        }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    width: 100%;
+    &:first-child {
+        margin: 16px 0;
+    }
+}
+
+.link-text {
+    color: transparent;
+    font-weight: bold;
+    font-family: $headline-font;
+    margin-left: 8px;
+    font-size: $font-16;
+    transition: color 200ms ease-out; 
+  }
+  
+.nav-link {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    color: $primary-color;
+    text-decoration: none;
+  }
+  
+.nav-link svg {
+    width: 32px;
+    min-width: 32px;
+    margin: 0 24px;
+  }
+@media only screen and (max-width: 1439px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 68px;
+      z-index: 1;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+    .link-text {
+      
+      text-indent: -9999px;
+    }
+}
+  
+@media (min-width:320px) and (max-width:425px) {
+    .navbar {
+      height: 48px;
+    }
+    .nav-link {
+      height: 48px;
+    }
+  }
+  
+@media (min-width:425px) and (max-width:768px) {
+    .nav-link {
+      height: 66px;
+    }
+}
+  
+@media (min-width:768px) and (max-width:1439px) {
+    .nav-link {
+      height: 70px;
+    }
+}
+  
+@media only screen and (min-width: 1439px) {
+    .navbar {
+      width: 5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 194px;
+    }
+  
+    .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo-text {
+      left: 0px;
+    }
+}
+
+.nav-item:hover .link-text {
+    color: $text-color;
+    
+}
+
+.nav-link:hover {
+    background-color: $bg-color; 
+    color: $text-color; 
+    box-shadow: $icon-shadow;
+}
+  
+.nav-item:first-child .nav-link:hover {
+    background-color: $bg-color; 
+    color: $secondary-color;
+}
+  
+.nav-item:first-child .nav-link:hover .link-text {
+    color: $secondary-color;
+}
+
+  
+@media (max-width:555px) {
+    .nav-link svg {
+      margin: 0;
+    }
+} 

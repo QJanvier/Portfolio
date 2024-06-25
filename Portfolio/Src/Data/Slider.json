@@ -1,29 +1,29 @@
 [
     {
-        "sliderImg": "/Assets/Img/Works/Bluel-Wall.png",
+        "sliderImg": "../../images/Works/Bluel-Wall.png",
         "sliderTitle": "Portfolio - Sophie Bluel",
-        "sliderDescription": "Designing a Single Page Desktop-First Application for an Architect, Implementing a RESTful API for Data Retrieval, Encompassing Category Filtering, and a Contact Form.",
+        "sliderDescription": "Conception d'une application pour une architecte en single page et desktop first, filtrage de catégories, formulaire de contact et implémentation d'une API rest.",
         "sliderLink": "https://github.com/QJanvier/Projet-n-6-Portfolio.git",
         "sliderId": 1
     },
     {
-        "sliderImg": "/Assets/Img/Works/Nina-Wall.png",
+        "sliderImg": "../../images/Works/Nina-Wall.png",
         "sliderTitle": "Portfolio - Nina Carducci",
-        "sliderDescription": "Optimizing a Desktop-First Application by Implementing SEO, Accessibility, and Performance Enhancements.",
+        "sliderDescription": "Optimisation d'une application en mettant en place des améliorations visant le référencement, l'accessibilité et les performances.",
         "sliderLink": "https://github.com/QJanvier/Projet9Refe.git",
         "sliderId": 2
     },
     {
-        "sliderImg": "/Assets/Img/Works/724-Wall.png",
+        "sliderImg": "../../images/Works/724-Wall.png",
         "sliderTitle": "Event Agency - 724events",
-        "sliderDescription": "Debugging the React website of an event agency",
+        "sliderDescription": "Débogage d'un site React d'une agence événementielle.",
         "sliderLink": "https://github.com/QJanvier/Projet10DebugSiteEvent.git",
         "sliderId": 3
     },
     {
-        "sliderImg": "/Assets/Img/Works/ArgentBank-Wall.jpeg",
+        "sliderImg": "../../images/Works/ArgentBank-Wall.jpeg",
         "sliderTitle": "Online Bank - ArgentBank",
-        "sliderDescription": "Transforming a static website into a React application with state management using Redux",
+        "sliderDescription": "Transfomer un site web statique React avec l'utilisation de Redux.",
         "sliderLink": "https://github.com/QJanvier/Project11ArgentBank.git",
         "sliderId": 4
     }
