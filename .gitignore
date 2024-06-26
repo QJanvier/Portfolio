@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-Src/Services/Security.js
+
 node_modules
 dist
 dist-ssr
