@@ -96,7 +96,7 @@ function Form_contact() {
                                     <Input  className="message-input border-radius padding-8" text="Message" autoComplete="Message" name="Message" placeholder="Votre message" required htmlFor="Message" textarea disabled={!isAccepted} />
                                 </div>
                                 <div>
-                                    <button className={`border-radius margin-16 btn-width form-btn ${!isAccepted ? 'disabled' : ''}`} id="form-btn" type="submit" disabled={!isAccepted} style={{ opacity: isAccepted ? 1 : 0.5 }}>
+                                    <button className={`border-radius margin-16 btn-width form-btn bg-color ${!isAccepted ? 'disabled' : ''}`} id="form-btn" type="submit" disabled={!isAccepted} style={{ opacity: isAccepted ? 1 : 0.5 }}>
                                         {isAccepted ? "Envoi" : "Non disponible (Acceptez les cookies)"}
                                     </button>
                                 </div>
