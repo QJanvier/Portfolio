@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import Input from "../Input/Input";
 import Cookie from "../Cookie/Cookie";
+import { serviceId, templateId, userId } from "../../Services/Security";
 
 function Form_contact() {
     
@@ -16,15 +17,15 @@ function Form_contact() {
     }, [])
 
 
-    // const captchaKey = import.meta.env.VITE_CAPTCHA_KEY;
+    
     const form = useRef();
     const [messageStatus, setMessageStatus] = useState(null);
     const [isVerified, setIsVerified] = useState(false);
 
 
-    // const handleRecaptchaChange = () => {
-    //     setIsVerified(true);
-    // };
+    const handleRecaptchaChange = () => {
+        setIsVerified(true);
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -34,7 +35,8 @@ function Form_contact() {
         //     return;
         // }
 
-        emailjs.sendForm('outlook','service_oiiiip2', e.target, 'nCRGPcDkCx3-_lmRg')
+
+        emailjs.sendForm( serviceId, templateId, e.target, userId )
         .then(
           (response) => {
             console.log('SUCCESS!', response.status);
