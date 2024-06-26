@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 75px;
   
     & p {
       max-width: 1012px;
@@ -88,7 +89,7 @@
       justify-content: center;
   
       & button {
-        color: $sun-color;
+        color: $bg-color;
         cursor: pointer;
         background-color: transparent;
         font-size: $font-48;
@@ -97,7 +98,7 @@
         
       }
     }
-  
+
     @media (min-width: 320px) and (max-width: 1439px) {
       .center-align {
         margin: 0;
@@ -128,6 +129,19 @@
     }
   }
   
+  @media (min-width:427px) and (max-width:734) {
+    .slider {
+      max-width: fit-content;
+    }
+
+    .slider img {
+      width: 500px;
+      object-fit: cover;
+    }
+    .slider-image {
+      height:20vh;
+    }
+  }
   @media (min-width:768px) and (max-width:1023px) {
     .slider-image {
       height: 400px;

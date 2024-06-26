@@ -14,12 +14,15 @@
     }
 }
 
+
+
 #header {
     background-color: $bg-color;
     box-sizing: border-box;
     box-shadow: $main-shadow;
     margin-top: 32px;
     padding: 8px 32px;
+    max-width: 1350px;
 }
 .header__h1 {
     margin: 32px 0;
@@ -78,6 +81,10 @@
         text-align: center;
         font-size: $font-28;
     }
+    .header__text {
+        position: relative;
+        left: -25px;
+    }
     .header__sec-text {
         margin: 8px 0;
         height: 22px;
@@ -91,12 +98,20 @@
 
 
 @media (min-width: 320px) and (max-width: 768px) {
+
+    #header {
+        max-width: 250px;
+    }
     .header__sec-text {
         width: 240px;
     }
 }
 
 @media (min-width: 767px) and (max-width: 1025px) {
+    #header {
+        max-width: 700px;
+    }
+
     .header__h1 {
         font-size: 24px;
         text-align: center;
@@ -109,10 +124,30 @@
 
 }
 
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 500px) {
+    #header {
+        max-width: 380px;
+    }
+    .header__pp img {
+        width: 140px;
+        height: 140px;
+    }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+    #header {
+        max-width: 450px;
+    }
+
     .header__pp img {
         width: 140px;
         height: 140px;
     }
     
+}
+
+
+@media (min-width: 1026px) and (max-width: 1439px) {
+    #header {
+        max-width: 1000px;
+    }
 }

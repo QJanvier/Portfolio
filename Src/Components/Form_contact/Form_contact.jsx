@@ -75,14 +75,17 @@ function Form_contact() {
                 <div className="contact">
                     <div className="contact__me">
                         <h2>Contactez-Moi</h2>
-                        <p></p>
+                        <div className="contact__me_text">
+                            <p>Pour me contactez, veuillez utiliser le formulaire de contact.</p>
+                            <p>Vous pouvez également me contactez depuis la plateforme LinkedIn.</p>
+                        </div>
                     </div>
                     <div className="contact__form">
                         <h2>Formulaire de contact</h2>
                         <form ref={form} onSubmit={sendEmail}>
                             <div className="container-form">
                                 <div className="input-container">
-                                    <Input className="border-radius padding-8" text="Name" autoComplete="Name" name="user_name" placeholder="Votre nom" type="text" required disabled={!isAccepted} />
+                                    <Input className="border-radius padding-8" text="Nom" autoComplete="Name" name="user_name" placeholder="Votre nom" type="text" required disabled={!isAccepted} />
                                 </div>
                                 <div className="input-container">
                                     <Input className="border-radius padding-8" text="Email" autoComplete="Email" name="user_email" placeholder="Votre adresse mail" type="email"  required disabled={!isAccepted}/>

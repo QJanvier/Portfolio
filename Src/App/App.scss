@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
 .Hero-Pages {
     display: flex;
 }
@@ -36,7 +40,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: $sun-color;
+    background: $link-color;
 }
 
 .border-radius {

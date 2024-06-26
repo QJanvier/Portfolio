@@ -1,9 +1,9 @@
-.navbar {
+.navbar {   
     position: fixed;
     top: 0px;
     left: 0px;
-    right: 0px;
     width: 100%;
+    max-height: 70px;
     background-color: $secondary-color;
     border-right: 4px solid $text-color;
 
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 80px;
+    height: 45px;
     color: $primary-color;
     text-decoration: none;
   }
@@ -53,86 +53,28 @@
     min-width: 32px;
     margin: 0 24px;
   }
-@media only screen and (max-width: 1439px) {
-    .navbar {
-      bottom: 0;
-      width: 100vw;
-      height: 68px;
-      z-index: 1;
-    }
-  
-    .nav-link {
-      justify-content: center;
-    }
-    .link-text {
-      
-      text-indent: -9999px;
-    }
-}
-  
-@media (min-width:320px) and (max-width:425px) {
-    .navbar {
-      height: 48px;
-    }
-    .nav-link {
-      height: 48px;
-    }
-  }
-  
-@media (min-width:425px) and (max-width:768px) {
-    .nav-link {
-      height: 66px;
-    }
-}
-  
-@media (min-width:768px) and (max-width:1439px) {
-    .nav-link {
-      height: 70px;
-    }
-}
-  
-@media only screen and (min-width: 1439px) {
-    .navbar {
-      width: 5rem;
-      height: 100vh;
-    }
-  
-    .navbar:hover {
-      width: 194px;
-    }
-  
-    .link-text {
-      display: inline;
-    }
-  
-    .navbar:hover .logo-text {
-      left: 0px;
-    }
-}
 
-.nav-item:hover .link-text {
-    color: $text-color;
-    
-}
 
-.nav-link:hover {
-    background-color: $bg-color; 
-    color: $text-color; 
-    box-shadow: $icon-shadow;
-}
-  
-.nav-item:first-child .nav-link:hover {
-    background-color: $bg-color; 
-    color: $secondary-color;
-}
-  
-.nav-item:first-child .nav-link:hover .link-text {
-    color: $secondary-color;
-}
+@media (min-width:530px ) and (max-width: 720px) {
+    .nav-link {
+        max-width: 120px;
 
-  
-@media (max-width:555px) {
+    }
     .nav-link svg {
-      margin: 0;
+        margin: 0 12px;
     }
-} 
+}
+
+@media (min-width:320px) and (max-width: 529px) {
+    .nav-link {
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link svg {
+        margin: 0;
+    }
+    .link-text {
+        display: none;
+    }
+}
